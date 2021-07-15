@@ -7,7 +7,7 @@ Boilerplate para um projeto usando [Electron](https://www.electronjs.org), [Reac
 
 <br>
 
-If you want the application to run at OS startup and in background, click [here](http://github.com/).
+If you want the application to run at OS startup and in background, click [here](https://github.com/daniloribeiro00/boilerplate-electron-react-typescript-startup-background).
 
 Caso queira que a aplicação inicie junto com o sistema operacional e em background, clique [aqui](https://github.com/daniloribeiro00/boilerplate-electron-react-typescript-startup-background).
 
