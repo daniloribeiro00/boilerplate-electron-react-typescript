@@ -6,6 +6,12 @@ Boilerplate for a project using [Electron](https://www.electronjs.org), [React J
 Boilerplate para um projeto usando [Electron](https://www.electronjs.org), [React JS](https://pt-br.reactjs.org), [TypeScript](https://www.typescriptlang.org/pt/) e [Styled Components](https://styled-components.com).
 
 <br>
+
+If you want the application to run at OS startup and in background, click [here](http://github.com/).
+
+Caso queira que a aplicação inicie junto com o sistema operacional e em background, clique [aqui](http://github.com/).
+
+<br>
 <hr>
 <br>
 
@@ -56,6 +62,14 @@ The files will be created in `/dist` folder.
 Para gerar arquivos instaladores da aplicação, execute um dos seguintes comandos:
 
 Os arquivos serão criados na pasta `/dist`.
+
+<br>
+
+### The OS you are currently running:
+
+```bash
+yarn dist
+```
 
 <br>
 

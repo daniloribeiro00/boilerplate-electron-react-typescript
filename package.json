@@ -3,6 +3,7 @@
 	"author": "Danilo Ribeiro <danilo.ribeiro00d@gmail.com>",
 	"version": "1.0.0",
 	"description": "An Electron boilerplate including TypeScript, React JS, Styled Components, Jest and ESLint.",
+	"homepage": "https://github.com/",
 	"main": "./.webpack/main/index.js",
 	"scripts": {
 		"start": "electron-forge start",
@@ -12,6 +13,7 @@
 		"lint": "eslint . --ext js,ts",
 		"test": "jest",
 		"pack": "electron-builder --dir",
+		"dist": "yarn electron-forge package && yarn electron-builder",
 		"dist:windows": "yarn electron-forge package && yarn electron-builder --windows --ia32 --x64",
 		"dist:windows-arm": "yarn electron-forge package && yarn electron-builder --windows --arm64",
 		"dist:linux": "yarn electron-forge package && yarn electron-builder --linux --ia32 --x64",
@@ -23,6 +25,9 @@
 		"appId": "com.authorName.appName",
 		"productName": "Your App Name",
 		"copyright": "Author Name",
+		"extraResources": [
+			"./assets"
+		],
 		"mac": {
 			"target": "dmg",
 			"category": "public.app-category.yourAppCategory",

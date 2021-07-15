@@ -12,7 +12,7 @@ declare const MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY: string;
 
 function createWindow() {
 	mainWindow = new BrowserWindow({
-		// icon: path.join(assetsPath, 'assets', 'icon.png'),
+		// icon: path.join(process.resourcesPath, 'assets/icon.png'),
 		width: 1100,
 		height: 700,
 		backgroundColor: '#191622',
@@ -25,11 +25,14 @@ function createWindow() {
 
 	mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
 
-	// If you want to remove the menu bar, use the next line
+	// Remove the menu bar
 	// mainWindow.removeMenu();
 
-	// If you want to maximize the window after opened, use the next line
+	// Maximize the window after opened
 	// mainWindow.maximize();
+
+	// Open developer tools
+	mainWindow.webContents.openDevTools();
 
 	mainWindow.on('closed', () => {
 		mainWindow = null;
@@ -45,18 +48,22 @@ async function registerListeners() {
 	});
 }
 
+// Actions when the app is opened
 app
 	.on('ready', createWindow)
 	.whenReady()
 	.then(registerListeners)
 	.catch(e => console.error(e));
 
+// Apps in MacOS generally stay open even if all windows are closed
+// If the OS is not MacOS, quit app
 app.on('window-all-closed', () => {
 	if (process.platform !== 'darwin') {
 		app.quit();
 	}
 });
 
+// If there are no windows opened, create a new one
 app.on('activate', () => {
 	if (BrowserWindow.getAllWindows().length === 0) {
 		createWindow();
