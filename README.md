@@ -172,9 +172,9 @@ yarn dist
 
 ## Known Issues / Problemas conhecidos:
 
-If any script throws an error, erase these folders `/dist` e `/out` e `/.webpack` (DO NOT CONFUSE WITH `/webpack`), then run the desired script again.
+If any script throws an error, erase folders `/dist`, `/out` and `/.webpack` (DO NOT CONFUSE WITH `/webpack`), then run the desired script again.
 
-Caso algum dos script gere erro, apague as pastas `/dist` e `/out` e `/.webpack` (NÃO CONFUNDIR COM `/webpack`), e execute o script desejado novamente.
+Caso algum dos script gere erro, apague as pastas `/dist`, `/out` e `/.webpack` (NÃO CONFUNDIR COM `/webpack`), e execute o script desejado novamente.
 
 <br>
 <hr>
