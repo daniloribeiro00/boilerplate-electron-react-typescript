@@ -1,4 +1,5 @@
 import { app, BrowserWindow, ipcMain } from 'electron';
+import path from 'path';
 
 let mainWindow: BrowserWindow | null;
 
@@ -12,10 +13,9 @@ declare const MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY: string;
 
 function createWindow() {
 	mainWindow = new BrowserWindow({
-		// icon: path.join(process.resourcesPath, 'assets/icon.png'),
-		width: 1100,
-		height: 700,
-		backgroundColor: '#191622',
+		icon: path.join(process.resourcesPath, 'assets/favicon.png'),
+		width: 800,
+		height: 600,
 		webPreferences: {
 			nodeIntegration: false,
 			contextIsolation: true,
