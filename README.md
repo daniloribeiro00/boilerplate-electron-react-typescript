@@ -5,11 +5,6 @@ Boilerplate for a project using [Electron](https://www.electronjs.org), [React J
 
 Boilerplate para um projeto usando [Electron](https://www.electronjs.org), [React JS](https://pt-br.reactjs.org), [TypeScript](https://www.typescriptlang.org/pt/) e [Styled Components](https://styled-components.com).
 
-<br>
-
-If you want the application to run at OS startup and in background, click [here](https://github.com/daniloribeiro00/boilerplate-electron-react-typescript-startup-background).
-
-Caso queira que a aplicação inicie junto com o sistema operacional e em background, clique [aqui](https://github.com/daniloribeiro00/boilerplate-electron-react-typescript-startup-background).
 
 <br>
 <hr>
