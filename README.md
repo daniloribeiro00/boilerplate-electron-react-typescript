@@ -185,7 +185,7 @@ Baseado no boilerplate desenvolvido por Diego Fernandes, disponível [aqui](http
 
 Solution for creating Linux installer in a Windows computer posted by Darkseal [here](https://github.com/electron-userland/electron-build-service/issues/9#issuecomment-704069238).
 
-Solução para criação de instalados do Linux em máquinas com Windows disponibilizada por Darkseal [aqui](https://github.com/electron-userland/electron-build-service/issues/9#issuecomment-704069238).
+Solução para criação de instaladores do Linux em máquinas com Windows disponibilizada por Darkseal [aqui](https://github.com/electron-userland/electron-build-service/issues/9#issuecomment-704069238).
 
 <br>
 
